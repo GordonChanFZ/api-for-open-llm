@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:23.10-py3
+FROM pytorch/pytorch:latest
 
 WORKDIR /workspace/
 ENV PYTHONPATH /workspace/
