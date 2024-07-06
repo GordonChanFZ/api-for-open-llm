@@ -46,4 +46,4 @@ if LLM_ENGINE is not None:
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(server:app, host=SETTINGS.host, port=SETTINGS.port, log_level="info", reload=False,workers=6)
+    uvicorn.run(app="server:app", host=SETTINGS.host, port=SETTINGS.port, log_level="info", reload=False,workers=6)
